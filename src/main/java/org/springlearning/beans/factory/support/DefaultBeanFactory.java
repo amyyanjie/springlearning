@@ -5,6 +5,8 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.springlearning.beans.BeanDefinition;
+import org.springlearning.beans.factory.BeanCreationException;
+import org.springlearning.beans.factory.BeanDefinitonStoreException;
 import org.springlearning.beans.factory.BeanFactory;
 import org.springlearning.util.ClassUtils;
 
@@ -44,9 +46,9 @@ public class DefaultBeanFactory implements BeanFactory {
                 this.beanDefinitionMap.put(id, bd);
             }
         } catch (DocumentException e) {
-            e.printStackTrace();
-        }finally {
-            if (is!=null){
+            throw new BeanDefinitonStoreException("IOException parsing XML document failed ");
+        } finally {
+            if (is != null) {
                 try {
                     is.close();
                 } catch (IOException e) {
@@ -65,20 +67,15 @@ public class DefaultBeanFactory implements BeanFactory {
     public Object getBean(String beanID) {
         BeanDefinition bd = this.getBeanDefinition(beanID);
         if (bd == null) {
-            return null;
+            throw new BeanCreationException("Bean Definition doesn't exit");
         }
         ClassLoader classLoader = ClassUtils.getDefaultClassLoader();
         String beanClassName = bd.getBeanClassName();
         try {
             Class<?> clz = classLoader.loadClass(beanClassName);
             return clz.newInstance();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new BeanCreationException("create bean for " + beanClassName + "+failed", e);
         }
-        return null;
     }
 }
