@@ -2,6 +2,7 @@ package org.springlearning.beans.factory;
 
 import org.springlearning.beans.BeansException;
 
+//创建Bean出错时抛出异常
 public class BeanCreationException extends BeansException {
     private String beanName;
 
