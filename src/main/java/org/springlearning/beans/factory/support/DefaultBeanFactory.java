@@ -14,8 +14,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * 对一个类而言，应该仅有一个引起它变化的原因
  */
 public class DefaultBeanFactory implements BeanFactory,BeanDefinitonRegistry{
-    private static final String ID_ATTRIBUTE = "id";
-    private static final String CLASS_ATTRIBUTE = "class";
     private final Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String, BeanDefinition>(64);
 
     public DefaultBeanFactory() {
@@ -28,7 +26,6 @@ public class DefaultBeanFactory implements BeanFactory,BeanDefinitonRegistry{
 
     public void registerBeanDefinition(String beanID, BeanDefinition bd) {
         this.beanDefinitionMap.put(beanID,bd);
-
     }
 
     //取的时候，把他通过反射的方式把类装载进来，再newInstance

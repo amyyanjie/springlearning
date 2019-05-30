@@ -15,12 +15,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
 
-public class XMLBeanDefinitionReader {
+public class XmlBeanDefinitionReader {
     private static final String ID_ATTRIBUTE = "id";
     private static final String CLASS_ATTRIBUTE = "class";
     private BeanDefinitonRegistry registry;
 
-    public XMLBeanDefinitionReader(BeanDefinitonRegistry registry) {
+    public XmlBeanDefinitionReader(BeanDefinitonRegistry registry) {
         this.registry=registry;
     }
 
