@@ -14,7 +14,7 @@ public class BeanFactoryTest {
     private DefaultBeanFactory factory;
     private XmlBeanDefinitionReader reader;
 
-    //运行每个测试用例时，都会执行setUp()，每个测试用例中factory,reader都是最新的，互不影响。
+    //运行每个测试用例时，都会执行setUp()，每个测试用例中factory,reader都是最新的，互不影响(隔离性)。
     @Before
     public void setUp() {
         factory = new DefaultBeanFactory();
