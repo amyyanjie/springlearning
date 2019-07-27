@@ -2,30 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="693883d5-db45-4771-b998-064e684462f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springlearning/core/io/ClassPathResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springlearning/core/io/FileSystemResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springlearning/core/io/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springlearning/util/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/ResourceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springlearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springlearning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/BeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springlearning/context/support/ClassPathXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springlearning/context/support/ClassPathXmlApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/ApplicationContextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/BeanFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/BeanFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/BeanDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/BeanDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/BeansException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/BeansException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/BeanCreationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/BeanCreationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/BeanDefinitonStoreException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/BeanDefinitonStoreException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/BeanFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/BeanFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/support/BeanDefinitonRegistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/support/BeanDefinitonRegistry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/support/DefaultBeanFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/support/DefaultBeanFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/support/GenericBeanDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/support/GenericBeanDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/xml/XMLBeanDefinitionReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/beans/factory/xml/XMLBeanDefinitionReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/context/ApplicationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/context/ApplicationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/context/support/ClassPathXmlApplicationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/context/support/ClassPathXmlApplicationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/springlearning/util/ClassUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springlearning/util/ClassUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/springlearning/service/v1/PetStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/springlearning/service/v1/PetStoreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/springlearning/test/v1/ApplicationContextTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/springlearning/test/v1/ApplicationContextTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/springlearning/test/v1/BeanFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/springlearning/test/v1/BeanFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/springlearning/test/v1/V1AllTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/springlearning/test/v1/V1AllTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,29 +49,30 @@
         <counts>
           <entry key="class" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="653" />
-          <entry key="xml" value="12" />
+          <entry key="java" value="679" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="653" />
-          <entry key="XML" value="12" />
+          <entry key="JAVA" value="679" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="4601" />
+          <entry key="java" value="5473" />
+          <entry key="txt" value="22" />
           <entry key="xml" value="146" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4601" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="5473" />
+          <entry key="PLAIN_TEXT" value="26" />
           <entry key="XML" value="146" />
         </counts>
       </usages-collector>
@@ -103,13 +86,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/xml/XmlBeanDefinitionReader.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/ResourceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="428">
+              <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding>
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/support/GenericBeanDefinition.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springlearning/beans/BeansException.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/support/BeanCreationException.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/petstore-v1.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/BeanCreationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/BeanDefinitonStoreException.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/xml/XMLBeanDefinitonReader.java" />
@@ -171,6 +152,13 @@
         <option value="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/ApplicationContextTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/Hello.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/BeanFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/petstore-v1.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springlearning/core/io/Resource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springlearning/core/io/Resource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springlearning/core/io/ClassPathResource.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/ResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springlearning/core/io/FileSystemResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springlearning/util/Assert.java" />
       </list>
     </option>
   </component>
@@ -256,47 +244,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springlearning" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springlearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springlearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springlearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
-              <item name="beans" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springlearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
               <item name="context" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -308,6 +255,15 @@
               <item name="springlearning" type="462c0819:PsiDirectoryNode" />
               <item name="context" type="462c0819:PsiDirectoryNode" />
               <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springlearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springlearning" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springlearning" type="b2602c69:ProjectViewProjectNode" />
@@ -379,7 +335,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564196667682" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564204675623" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/org/springlearning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -394,11 +350,11 @@
       <recent name="org.springlearning.beans" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.springlearning.util" />
+      <recent name="org.springlearning.core.io" />
       <recent name="org.springlearning.context" />
       <recent name="org.springlearning.context.support" />
       <recent name="org.springlearning.beans.factory.support" />
-      <recent name="org.springlearning.beans.factory.xml" />
-      <recent name="org.springlearning.service.vq" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -413,7 +369,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Hello">
+  <component name="RunManager" selected="JUnit.V1AllTest">
     <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.springlearning.test.v1.Hello" />
       <module name="springlearning" />
@@ -457,7 +413,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeanFactoryTest.testInvalidBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springlearning" />
       <extension name="coverage">
         <pattern>
@@ -466,9 +422,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.springlearning.test.v1" />
-      <option name="MAIN_CLASS_NAME" value="org.springlearning.test.v1.BeanFactoryTest" />
-      <option name="METHOD_NAME" value="testInvalidBean" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="org.springlearning.test.v1.ResourceTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -488,19 +442,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BeanFactoryTest.testInvalidBean" />
       <item itemvalue="JUnit.BeanFactoryTest" />
       <item itemvalue="JUnit.V1AllTest" />
       <item itemvalue="JUnit.ApplicationContextTest.test" />
       <item itemvalue="Application.Hello" />
+      <item itemvalue="JUnit.ResourceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.V1AllTest" />
+        <item itemvalue="JUnit.ResourceTest" />
         <item itemvalue="Application.Hello" />
         <item itemvalue="JUnit.ApplicationContextTest.test" />
-        <item itemvalue="JUnit.V1AllTest" />
         <item itemvalue="JUnit.BeanFactoryTest" />
-        <item itemvalue="JUnit.BeanFactoryTest.testInvalidBean" />
       </list>
     </recent_temporary>
   </component>
@@ -530,8 +484,16 @@
       <workItem from="1563951713296" duration="9465000" />
       <workItem from="1564049820738" duration="530000" />
       <workItem from="1564103479903" duration="4755000" />
-      <workItem from="1564194766341" duration="1762000" />
+      <workItem from="1564194766341" duration="5040000" />
     </task>
+    <task id="LOCAL-00001" summary="ApplicationContext">
+      <created>1564196759168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564196759168</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -567,7 +529,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51343000" />
+    <option name="totallyTimeSpent" value="54621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,8 +542,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="589" y="0" width="851" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3053152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3053152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -598,7 +561,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32961586" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" visible="true" weight="0.1747212" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" weight="0.1747212" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32961586" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -617,6 +580,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ApplicationContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="ApplicationContext" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -670,13 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="453" column="34" selection-start-line="453" selection-start-column="34" selection-end-line="453" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/petstore-v1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -852,11 +812,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/springlearning/beans/factory/xml/XmlBeanDefinitionReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="260">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#818#819#0" expanded="true" />
             <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/petstore-v1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springlearning/core/io/Resource.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springlearning/core/io/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springlearning/util/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springlearning/core/io/FileSystemResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springlearning/core/io/ClassPathResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/springlearning/test/v1/ResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
