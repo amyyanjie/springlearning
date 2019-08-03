@@ -26,7 +26,9 @@ public class ResourceTest {
 
     @Test
     public void testFileSystemResource() throws Exception{
-        Resource r= new FileSystemResource("/Users/yanjie/Public/learn/springlearning/src/test/resources/petstore-v1.xml");
+//        Resource r= new FileSystemResource("/Users/yanjie/Public/learn/springlearning/src/test/resources/petstore-v1.xml");
+//      // 优化1：项目结构相对路径
+        Resource r= new FileSystemResource("src/test/resources/petstore-v1.xml");
         InputStream is=null;
         try {
             is=r.getInputStream();
