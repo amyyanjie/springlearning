@@ -9,6 +9,7 @@ import org.springlearning.beans.BeanDefinition;
 import org.springlearning.beans.factory.BeanDefinitonStoreException;
 import org.springlearning.beans.factory.support.BeanDefinitonRegistry;
 import org.springlearning.beans.factory.support.GenericBeanDefinition;
+import org.springlearning.core.io.Resource;
 import org.springlearning.util.ClassUtils;
 
 import java.io.IOException;
@@ -24,11 +25,10 @@ public class XmlBeanDefinitionReader {
         this.registry=registry;
     }
 
-    public void loanBeanDefinitions(String configFile) {
+    public void loanBeanDefinitions(Resource resource) {
         InputStream is = null;
         try {
-            ClassLoader cl = ClassUtils.getDefaultClassLoader();
-            is = cl.getResourceAsStream(configFile);
+            is=resource.getInputStream();
             SAXReader reader = new SAXReader();
             Document doc = reader.read(is);  //xml称为Document
 
@@ -41,7 +41,7 @@ public class XmlBeanDefinitionReader {
                 BeanDefinition bd = new GenericBeanDefinition(id, beanClassName);
                 this.registry.registerBeanDefinition(id, bd);
             }
-        } catch (DocumentException e) {
+        } catch (Exception e) {
             throw new BeanDefinitonStoreException("IOException parsing XML document failed ");
         } finally {
             if (is != null) {
