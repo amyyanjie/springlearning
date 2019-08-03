@@ -8,5 +8,6 @@ public interface BeanDefinition {
     boolean isPrototype();
     void setScope(String scope);
     String getScope();
+
     String getBeanClassName();
 }

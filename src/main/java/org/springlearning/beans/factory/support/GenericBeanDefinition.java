@@ -5,9 +5,9 @@ import org.springlearning.beans.BeanDefinition;
 public class GenericBeanDefinition implements BeanDefinition {
     private String id;
     private String beanClassName;
-    private boolean singleton=true;
-    private boolean prototype=false;
-    private String scope=SCOPE_DEFAULT;
+    private boolean singleton = true;
+    private boolean prototype = false;
+    private String scope = SCOPE_DEFAULT;
 
 
     public GenericBeanDefinition(String id, String beanClassName) {
@@ -28,13 +28,14 @@ public class GenericBeanDefinition implements BeanDefinition {
     }
 
     public void setScope(String scope) {
-        this.scope=scope;
-        this.singleton=SCOPE_SINGLETON.equals(scope)||SCOPE_DEFAULT.equals(scope);
+        this.scope = scope;
+        this.singleton = SCOPE_SINGLETON.equals(scope) || SCOPE_DEFAULT.equals(scope);
+        this.prototype = SCOPE_PROTOTYPE.equals(scope);
 
     }
 
     public String getScope() {
-        return null;
+        return this.scope;
     }
 
 }

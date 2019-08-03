@@ -11,6 +11,9 @@ import org.springlearning.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springlearning.core.io.ClassPathResource;
 import org.springlearning.service.v1.PetStoreService;
 
+import static org.junit.Assert.*;
+
+
 public class BeanFactoryTest {
     private DefaultBeanFactory factory;
     private XmlBeanDefinitionReader reader;
@@ -28,23 +31,30 @@ public class BeanFactoryTest {
         //去获取bean的定义
         //把这个xml传进去。希望这个DefaultBeanFactory能够解析这个xml,能够返回bean的定义
 //        BeanFactory factory=new DefaultBeanFactory("petstore-v1.xml");
+        reader.loadBeanDefinitions(new ClassPathResource("petstore-v1.xml"));
 
-        reader.loanBeanDefinitions(new ClassPathResource("petstore-v1.xml"));
         BeanDefinition bd = factory.getBeanDefinition("petStore");
-        Assert.assertTrue(bd.isSingleton());
-        Assert.assertFalse(bd.isPrototype());
-        Assert.assertEquals(bd.SCOPE_DEFAULT,bd.getScope());
 
-        Assert.assertEquals("org.springlearning.service.v1.PetStoreService", bd.getBeanClassName());
+        assertTrue(bd.isSingleton());
+
+        assertFalse(bd.isPrototype());
+
+        assertEquals(BeanDefinition.SCOPE_DEFAULT, bd.getScope());
+
+        assertEquals("org.springlearning.service.v1.PetStoreService", bd.getBeanClassName());
+
         PetStoreService petStore = (PetStoreService) factory.getBean("petStore");
-        Assert.assertNotNull(petStore);
+
+        assertNotNull(petStore);
+
         PetStoreService petStore1 = (PetStoreService) factory.getBean("petStore");
-        Assert.assertEquals(petStore, petStore1);
+
+        assertTrue(petStore.equals(petStore1));
     }
 
     @Test
     public void testInvalidBean() {
-        reader.loanBeanDefinitions(new ClassPathResource("petstore-v1.xml"));
+        reader.loadBeanDefinitions(new ClassPathResource("petstore-v1.xml"));
         try {
             factory.getBean("invalidBean");
         } catch (BeanCreationException e) {
@@ -56,7 +66,7 @@ public class BeanFactoryTest {
     @Test
     public void testInvalidXML() {
         try {
-            reader.loanBeanDefinitions(new ClassPathResource("xxx.xml"));
+            reader.loadBeanDefinitions(new ClassPathResource("xxx.xml"));
         } catch (BeanDefinitonStoreException e) {
             return;
         }

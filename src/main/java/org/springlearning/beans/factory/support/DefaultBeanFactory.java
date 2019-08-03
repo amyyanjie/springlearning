@@ -15,7 +15,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * SRP:单一职责原则
  * 对一个类而言，应该仅有一个引起它变化的原因
  */
-public class DefaultBeanFactory implements ConfigurableBeanFactory, BeanDefinitonRegistry {
+public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
+        implements ConfigurableBeanFactory, BeanDefinitonRegistry {
     private final Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String, BeanDefinition>(64);
     private ClassLoader beanClassLoader;
 
@@ -37,13 +38,25 @@ public class DefaultBeanFactory implements ConfigurableBeanFactory, BeanDefinito
         if (bd == null) {
             throw new BeanCreationException("Bean Definition doesn't exit");
         }
+        if (bd.isSingleton()) {
+            Object bean = this.getSingleton(beanID);
+            if (bean == null) {
+                bean = createBean(bd);
+                this.registerSingleton(beanID, bean);
+            }
+            return bean;
+        }
+        return createBean(bd);
+    }
+
+    private Object createBean(BeanDefinition bd) {
         ClassLoader cl = this.getBeanClassLoader();
         String beanClassName = bd.getBeanClassName();
         try {
             Class<?> clz = cl.loadClass(beanClassName);
             return clz.newInstance();
         } catch (Exception e) {
-            throw new BeanCreationException("create bean for " + beanClassName + "+failed", e);
+            throw new BeanCreationException("create bean for " + beanClassName + " failed", e);
         }
     }
 
